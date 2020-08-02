@@ -1,2 +1,3 @@
-setenv bootargs console=ttyS0,115200 panic=5 quiet
-bootz 0x41000000 - 0x41800000
+setenv initrd_high 0xffffffff
+setenv bootargs console=ttyS0,115200 root=/dev/ram0 rw panic=5 quiet
+bootm 0x40000000
