@@ -4,9 +4,8 @@
 #
 ################################################################################
 
-FCEUX_VERSION = 23fe9d5d47bd4fc9c9638030cd713942dca22d2d
-FCEUX_SITE_METHOD = git
-FCEUX_SITE = https://github.com/FunKey-Project/fceux.git
+FCEUX_VERSION = FunKey-0.99
+FCEUX_SITE = $(call github,FunKey-Project,fceux,fceux-$(FCEUX_VERSION))
 FCEUX_LICENSE = GPL-2.0
 FCEUX_LICENSE_FILES = COPYING
 
